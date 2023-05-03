@@ -1,7 +1,7 @@
 <h2><b>Technical Report: Engineering Features for ANCHOR based on MAP/Diameter Signaling Traffic</b></h2>
 
-This additional material should be seen as accompanying material to the paper "ANCHOR: Proactive Anomaly Detection for IoT
-Connectivity in Global Roaming".
+This additional material should be seen as accompanying material to the paper <b>"ANCHOR: Proactive Anomaly Detection for IoT
+Connectivity in Global Roaming"</b>.
  
  <h3> Introduction </h3>
 
@@ -50,7 +50,12 @@ Next, we introduce all the 95 features and provide additional information where 
   <tr>
     <th>Feature Name</th>
     <th>Description</th>
-    <th>Relationship to other features</th>
+    <th>Comments and Relationship to other features</th>
+ </tr>
+ <tr>
+    <td>Device ID</td>
+    <td>Encrypted unique identifier associated to each device, consistent over both MAP and Diameter signaling.</td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
   </tr>
   <tr>
     <td>n_operator_diam</td>
@@ -86,6 +91,46 @@ Next, we introduce all the 95 features and provide additional information where 
     <td>n_sgsn_changes</td>
     <td>Number of SGSN changes that we observe from the daily feed of MAP dialogues.</td>
     <td>We use this feature as a signal for device mobility. </td>
+  </tr>
+  <tr>
+    <td>mean_iat_in_session</td>
+    <td>Average inter-arrival time between dialogues _within_ a session, calculated over all the session we identify during a day.</td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+  </tr>
+  <tr>
+    <td>sd_iat_in_session</td>
+    <td>Standard deviation of the inter-arrival time between dialogues _within_ a session, calculated over all the session we identify during a day.</td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+ </tr>
+  <tr>
+    <td>mean_iat_session</td>
+    <td>Average inter-arrival time _between_ different sessions, calculated for all the session we identify during a day.</td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+  </tr>
+   <tr>
+    <td>sd_session_iat</td>
+    <td>Standard deviation of the inter-arrival time _between_ different sessions, calculated for all the session we identify during a day.</td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+  </tr>
+  <tr>
+    <td>mean_session_iat_sig</td>
+    <td></td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+ </tr>
+  <tr>
+    <td>mean_session_iat_sig</td>
+    <td></td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+  </tr>
+   <tr>
+    <td>sd_session_iat_sig</td>
+    <td></td>
+    <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
+  </tr>
+   <tr>
+    <td>n</td>
+    <td>Total number of signaling dialogues (both MAP and Diameter). </td>
+    <td>A signaling dialogues represents the complete sequence of all requests and responses involved in a particular signaling interaction between the visited and the home network of the IoT device. </td>
   </tr>
  
 </table> 
