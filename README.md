@@ -19,3 +19,51 @@ In total, we include 95 features including overall statistics on i) signaling tr
 
 Since most IoT verticals deploy devices world-wide (outside the SIMs’ home country), MNOs use their roaming agreements to guarantee connectivity to the global SIMs installed in the IoT devices. International telco carriers that offer the roaming hub service interconnect the home network with any other visited network, thus increasing the geographical footprint of the IoT provides outside the borders of their respective MNOs’ home countries.
 As part of designing our method, we first address several system design questions before developing our detection engine. For instance, to meet the requirements of a scalable solution and ensure that significant resources are available, we design a central anomaly detection solution that runs in the analytics platform operated by the IoT provider. To tackle the challenge, we rely on a comprehensive, unique dataset that records the control signaling traffic of a variety of IoT devices operating worldwide (spanning 40 countries) for multiple IoT vertical applications.
+
+<h3> Feature Description </h3>
+
+Next, we introduce all the 95 features and provide additional information where needed. We mention that we generate these features on a daily basis, over a period of 30 consecutive days (corresponding to a full billing period). 
+
+ <table>
+  <tr>
+    <th>Feature Name</th>
+    <th>Description</th>
+    <th>Relationship to other features</th>
+  </tr>
+  <tr>
+    <td>n_operator_diam</td>
+    <td>Number of Visited MNOs from Diameter dialogues (4G connectivity).</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>n_operator_map</td>
+    <td>Number of Visited MNOs from MAP dialogues (2G/3G connectivity).</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>n_vlr_unique</td>
+    <td>Number of unique Visited Location Registries (VLRs) involved in the MAP signalig dialogues that we capture per day.</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>n_sgsn_unique</td>
+    <td>Total number of unique Serving GPRS Support Node (SGSNs) involved in the MAP signalig dialogues we capture in one day.</td>
+    <td></td>
+  </tr>
+     <tr>
+    <td>n_operator_changes</td>
+    <td>Number of visited operator changes that we observe from the daily feed of MAP dialogues.</td>
+    <td>We use this feature as a signal for device mobility; it should correlate with n_sgsn_unique and n_vlr_unique. </td>
+  </tr>
+      <tr>
+    <td>n_vlr_changes</td>
+    <td>Number of VLR changes that we observe from the daily feed of MAP dialogues.</td>
+    <td>We use this feature as a signal for device mobility. </td>
+  </tr>
+       <tr>
+    <td>n_sgsn_changes</td>
+    <td>Number of SGSN changes that we observe from the daily feed of MAP dialogues.</td>
+    <td>We use this feature as a signal for device mobility. </td>
+  </tr>
+ 
+</table> 
