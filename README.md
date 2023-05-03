@@ -94,22 +94,22 @@ Next, we introduce all the 95 features and provide additional information where 
   </tr>
   <tr>
     <td>mean_iat_in_session</td>
-    <td>Average inter-arrival time between dialogues _within_ a session, calculated over all the session we identify during a day.</td>
+    <td>Average inter-arrival time between dialogues <i>within</i> a session, calculated over all the session we identify during a day.</td>
     <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
   </tr>
   <tr>
     <td>sd_iat_in_session</td>
-    <td>Standard deviation of the inter-arrival time between dialogues _within_ a session, calculated over all the session we identify during a day.</td>
+    <td>Standard deviation of the inter-arrival time between dialogues <i>within</i> a session, calculated over all the session we identify during a day.</td>
     <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
  </tr>
   <tr>
     <td>mean_iat_session</td>
-    <td>Average inter-arrival time _between_ different sessions, calculated for all the session we identify during a day.</td>
+    <td>Average inter-arrival time <i>between</i> different sessions, calculated for all the session we identify during a day.</td>
     <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
   </tr>
    <tr>
     <td>sd_session_iat</td>
-    <td>Standard deviation of the inter-arrival time _between_ different sessions, calculated for all the session we identify during a day.</td>
+    <td>Standard deviation of the inter-arrival time <i>between</i> different sessions, calculated for all the session we identify during a day.</td>
     <td>A session captures the sequence of the signaling dialogues (both MAP or Diameter) that have a max inter-arrival time below 30s. </td>
   </tr>
   <tr>
@@ -131,6 +131,11 @@ Next, we introduce all the 95 features and provide additional information where 
     <td>n</td>
     <td>Total number of signaling dialogues (both MAP and Diameter). </td>
     <td>A signaling dialogues represents the complete sequence of all requests and responses involved in a particular signaling interaction between the visited and the home network of the IoT device. </td>
+  </tr>
+   <tr>
+    <td>n_map_success</td>
+    <td>Total number of <i>successful</i> MAP signaling dialogues. </td>
+    <td>A successful MAP dialog represents a sequence of signaling messages that results in a successful result for the IoT device. </td>
   </tr>
  
 </table> 
