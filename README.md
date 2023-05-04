@@ -147,6 +147,10 @@ Next, we introduce all the 95 features and provide additional information where 
     <td>Total number of <i>erroneous</i> MAP signaling dialogues. </td>
     <td>Errors are defined as signaling interactions (dialogs) that violate the criteria for valid request-response pairs or are otherwise unusable for the core networks. </td>
   </tr>
- 
+  <tr>
+    <td>n_diam_errors</td>
+    <td>Total number of <i>erroneous</i> Diameter signaling dialogues. </td>
+    <td>Errors are defined as signaling interactions (dialogs) that violate the criteria for valid request-response pairs or are otherwise unusable for the core networks. </td>
+  </tr>
  
 </table> 
