@@ -152,5 +152,374 @@ Next, we introduce all the 95 features and provide additional information where 
     <td>Total number of <i>erroneous</i> Diameter signaling dialogues. </td>
     <td>Errors are defined as signaling interactions (dialogs) that violate the criteria for valid request-response pairs or are otherwise unusable for the core networks. </td>
   </tr>
- 
+  <tr>
+    <td>n_map_rejects</td>
+    <td>Total number of <i>rejected</i> MAP signaling dialogues. </td>
+    <td>Rejects are defined as correct signaling interactions (dialogs) that result in a mobile core actively rejecting a request due to various (valid) reasons. These rerassons are encoded in the rejection code within the dialog. </td>
+  </tr>
+  <tr>
+    <td>n_diam_rejects</td>
+    <td>Total number of <i>rerjected</i> Diameter signaling dialogues. </td>
+    <td>Rejects are defined as correct signaling interactions (dialogs) that result in a mobile core actively rejecting a request due to various (valid) reasons. These rerassons are encoded in the rejection code within the dialog. </td>
+  </tr>
+  <tr>
+    <td>pct_map</td>
+    <td>Percentage of MAP dialogues from all the signaling dialogues we captured in a day </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_diam</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_diam_errors</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_map_errors</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_sai_success</td>
+    <td>Percentage of successful Send Authentication Information (SAI) dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>\
+  <tr>
+    <td>n_sai_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_sai_reject</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>\
+  <tr>
+    <td>n_sai_success_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_sai_error_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_sai_reject_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_sai_success_sgsn</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_sai_reject_sgsn</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_sai</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_sai_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_sai_sgn</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_success</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_reject</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_sai_success</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_sai_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_sai_reject</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_sai</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_ul_success</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+ </tr>
+   <tr>
+    <td>n_diam_ul_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_ul_reject</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_gprs_success</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_gprs_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_gprs_reject</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_diam_ul</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_ul_gprs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_success</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_success_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_error_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_success_sgsn</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_error_sgsn</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>n_cl_vlr</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>   
+  <tr>
+    <td>n_cl_sgsn</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_diam_cl_success</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_diam_cl_error</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_diam_cl</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>n_diam_cl_reject</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_map_sai_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_map_ul_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_map_ul_gprs_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_map_cl_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_diam_sai_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_diam_ul_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_diam_cl_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_sai_success_all_sais</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_sai_success_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_sai_error_all_sais</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>pct_sai_error_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <td>pct_sai_reject_all_sais</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_sai_reject_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_ul_success_all_uls</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_ul_success_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_ul_error_all_uls</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_ul_error_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_ul_reject_all_uls</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_ul_reject_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_cl_success_all_uls</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_cl_success_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_cl_error_all_uls</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>pct_cl_error_all_dialogs</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>total_activity_in_minutes</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>active_minutes</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>relative_activity</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>active_ngn_minutes</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>relative_ngn_activity</td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td> </td>
+  </tr>
 </table> 
