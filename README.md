@@ -137,5 +137,16 @@ Next, we introduce all the 95 features and provide additional information where 
     <td>Total number of <i>successful</i> MAP signaling dialogues. </td>
     <td>A successful MAP dialog represents a sequence of signaling messages that results in a successful result for the IoT device. </td>
   </tr>
+   <tr>
+    <td>n_diam_success</td>
+    <td>Total number of <i>successful</i> Diameter signaling dialogues. </td>
+    <td>A successful Diameter dialog represents a sequence of signaling messages that results in a successful result for the IoT device. </td>
+  </tr>
+  <tr>
+    <td>n_map_errors</td>
+    <td>Total number of <i>erroneous</i> MAP signaling dialogues. </td>
+    <td>Errors are defined as signaling interactions (dialogs) that violate the criteria for valid request-response pairs or are otherwise unusable for the core networks. </td>
+  </tr>
+ 
  
 </table> 
