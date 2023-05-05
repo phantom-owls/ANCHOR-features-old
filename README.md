@@ -164,37 +164,37 @@ Next, we introduce all the 95 features and provide additional information where 
   </tr>
   <tr>
     <td>pct_map</td>
-    <td>Percentage of MAP dialogues from all the signaling dialogues we captured in a day </td>
+    <td>Percentage of MAP dialogues from all the signaling dialogues we captured in a day for this device. </td>
     <td> </td>
   </tr>
   <tr>
     <td>pct_diam</td>
-    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day for this device. </td>
     <td> </td>
   </tr>
   <tr>
     <td>pct_diam_errors</td>
-    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td>Percentage of Diameter dialogues with <i>errors</i> from all the signaling dialogues we captured in a day. </td>
     <td> </td>
   </tr>
   <tr>
     <td>pct_map_errors</td>
-    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td>Percentage of MAP dialogues with <i>errors</i> from all the signaling dialogues we captured in a day.  </td>
     <td> </td>
   </tr>
   <tr>
     <td>n_sai_success</td>
-    <td>Percentage of successful Send Authentication Information (SAI) dialogues from all the signaling dialogues we captured in a day. </td>
+    <td>Number of successful Send Authentication Information (SAI) dialogues from all the signaling dialogues we captured in a day. </td>
     <td> </td>
   </tr>\
   <tr>
     <td>n_sai_error</td>
-    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td>Number of SAI dialogues with <i>errors</i> from all the signaling dialogues we captured in a day. </td>
     <td> </td>
   </tr>
   <tr>
     <td>n_sai_reject</td>
-    <td>Percentage of Diameter dialogues from all the signaling dialogues we captured in a day. </td>
+    <td>Number of <i>rejected</i> SAI dialogues from all the signaling dialogues we captured in a day for this device. </td>
     <td> </td>
   </tr>\
   <tr>
