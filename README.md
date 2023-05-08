@@ -159,7 +159,7 @@ Next, we introduce all the 95 features and provide additional information where 
   </tr>
   <tr>
     <td>n_diam_rejects</td>
-    <td>Total number of <i>rerjected</i> Diameter signaling dialogues. </td>
+    <td>Total number of <i>rejected</i> Diameter signaling dialogues. </td>
     <td>Rejects are defined as correct signaling interactions (dialogs) that result in a mobile core actively rejecting a request due to various (valid) reasons. These rerassons are encoded in the rejection code within the dialog. </td>
   </tr>
   <tr>
@@ -185,7 +185,7 @@ Next, we introduce all the 95 features and provide additional information where 
   <tr>
     <td>n_sai_success</td>
     <td>Number of successful Send Authentication Information (SAI) dialogues from all the signaling dialogues we captured in a day. </td>
-    <td> </td>
+    <td> A SAI dialogue </td>
   </tr>\
   <tr>
     <td>n_sai_error</td>
